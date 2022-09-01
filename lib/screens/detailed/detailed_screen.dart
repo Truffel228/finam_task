@@ -30,6 +30,10 @@ class DetailedScreen extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 20),
         child: Column(
           children: [
+            Text(
+              arguments.redditPost.data.title,
+            ),
+            const SizedBox(height: 20),
             Image.network(
               arguments.redditPost.data.thumbnail,
               width: double.infinity,
